@@ -1,2 +1,2 @@
 # Puzzle
-Matris Puzlle made with C# language
+Matris Puzzle Game made with C# language
