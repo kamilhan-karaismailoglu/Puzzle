@@ -10,16 +10,6 @@ using System.Windows.Forms;
 
 namespace Puzzle
 {
-    class cell : TextBox
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
-    }
-    class ipucu : Label
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
-    }
     public partial class Form1 : Form
     {
         static int[,] CevapAnahtarı;
@@ -132,8 +122,7 @@ namespace Puzzle
                     tablo[x, y] = RandomDeger;
                     satırDegerleri.Remove(RandomDeger);
                 }
-            }
-            
+            }           
             return tablo;          
         }
         bool tabloKontrol(int[,] tablo)
@@ -417,5 +406,16 @@ namespace Puzzle
             lblTime.Text = String.Format("{0:D2}", saat) + ":" + String.Format("{0:D2}", dakika) + ":" + String.Format("{0:D2}", saniye);
             saniye++;
         }
+    }
+
+    class cell : TextBox
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+    }
+    class ipucu : Label
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
     }
 }
